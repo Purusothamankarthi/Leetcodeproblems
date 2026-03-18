@@ -1,17 +1,12 @@
 package leetcode;
-import java.util.*;
 class Solution {
-    public int maximumGap1(int[] nums) {
-        int ans=0;
-       
-            Arrays.sort(nums);
-            for(int i=0;i<nums.length-1;i++)
-            {
-                if(ans<(nums[i+1]-nums[i]))
-                {
-                    ans=nums[i+1]-nums[i];
-                }
-            }
-        return ans;
-    }
+    
+    public static void main(String[] args)
+	{
+		int nums[]= {3,6,9,1};
+		maximumGap m=new maximumGap();
+		System.out.print(m.maximumGap1(nums));
+		
+		
+	}
 }
