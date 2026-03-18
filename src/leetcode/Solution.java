@@ -5,8 +5,11 @@ class Solution {
 	{
 		int nums[]= {3,6,9,1};
 		maximumGap m=new maximumGap();
-		System.out.print(m.maximumGap1(nums));
+//		System.out.print(m.maximumGap1(nums));
 		
-		
+		int nums1[]= {1,2};
+		int nums2[]= {3,4};
+		MedianSortedArrays median=new MedianSortedArrays();
+		System.out.print(median.findMedianSortedArrays(nums1, nums2));
 	}
 }
