@@ -1,4 +1,8 @@
 package leetcode;
+
+import java.util.Arrays;
+import java.util.List;
+
 class Solution {
     
     public static void main(String[] args)
@@ -33,14 +37,21 @@ class Solution {
 	            temp2.next = new ListNode(num5[i]);
 	            temp2 = temp2.next;
 	        }
-		mergeTwoLists ms=new mergeTwoLists();
-		ListNode head =ms.mergeTwoLists1(list1,list2);
-		print(head);    
-	}
-    static void print(ListNode head) {
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;
-        }
+//		mergeTwoLists ms=new mergeTwoLists();
+//		ListNode head =ms.mergeTwoLists1(list1,list2);
+//		print(head);    
+//	}
+//    static void print(ListNode head) {
+//        while (head != null) {
+//            System.out.print(head.val + " ");
+//            head = head.next;
+//        }
+	        String s="({)}";
+	        validparenthess parenthess=new validparenthess();
+//	        System.out.print(parenthess.isValid(s));
+	        String word="leetcode";
+	        List<String> wordDict = Arrays.asList("leet", "code");
+	        wordbreak answer=new wordbreak();
+	        System.out.print(answer.wordBreak1(word, wordDict));
     }
 }
