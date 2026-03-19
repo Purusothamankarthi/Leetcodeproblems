@@ -46,12 +46,51 @@ class Solution {
 //            System.out.print(head.val + " ");
 //            head = head.next;
 //        }
-	        String s="({)}";
-	        validparenthess parenthess=new validparenthess();
+//	        String s="({)}";
+//	        validparenthess parenthess=new validparenthess();
 //	        System.out.print(parenthess.isValid(s));
-	        String word="leetcode";
-	        List<String> wordDict = Arrays.asList("leet", "code");
-	        wordbreak answer=new wordbreak();
-	        System.out.print(answer.wordBreak1(word, wordDict));
+//	        String word="leetcode";
+//	        List<String> wordDict = Arrays.asList("leet", "code");
+//	        wordbreak answer=new wordbreak();
+//	        System.out.print(answer.wordBreak1(word, wordDict));
+//	       											 23. Merge k Sorted Lists
+	        int a[]= {1,4,5,6};
+	        int b[]= {1,7};
+	        int c[]= {3,4,5};
+	        ListNode l1 = new ListNode(a[0]);
+	        ListNode t1 = l1;
+
+	        for (int i = 1; i < a.length; i++) {
+	            t1.next = new ListNode(a[i]);
+	            t1 = t1.next;
+	        }
+	        ListNode l2 = new ListNode(b[0]);
+	        ListNode t2 = l2;
+
+	        for (int i = 1; i < b.length; i++) {
+	            t2.next = new ListNode(b[i]);
+	            t2 = t2.next;
+	        }
+	        ListNode l3 = new ListNode(c[0]);
+	        ListNode t3 = l1;
+
+	        for (int i = 1; i < c.length; i++) {
+	            t3.next = new ListNode(c[i]);
+	            t3 = t3.next;
+	        }
+	        MergekSortedLists ms=new MergekSortedLists();
+	        ListNode[] lists = {l1, l2, l3};
+			ListNode head =ms.mergeKLists(lists);
+			print(head);
+
+			
+    
+    
+    }
+    static void print(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
+        }
     }
 }
