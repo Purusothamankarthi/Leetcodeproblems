@@ -54,7 +54,7 @@ class Solution {
 //	        wordbreak answer=new wordbreak();
 //	        System.out.print(answer.wordBreak1(word, wordDict));
 //	       											 23. Merge k Sorted Lists
-	        int a[]= {1,4,5,6};
+	      /*  int a[]= {1,4,5,6};
 	        int b[]= {1,7};
 	        int c[]= {3,4,5};
 	        ListNode l1 = new ListNode(a[0]);
@@ -91,6 +91,13 @@ class Solution {
         while (head != null) {
             System.out.print(head.val + " ");
             head = head.next;
-        }
+        }*/
+//        									26. Remove Duplicates from Sorted Array
+	        
+	        int arr[]= {0,0,1,1,1,2,2,3,3,4};
+	        RemoveDuplicatesfromSortedArray ans= new RemoveDuplicatesfromSortedArray();
+	        
+	      int k=ans.removeDuplicates(arr);
+	        System.out.print(k);
     }
 }
