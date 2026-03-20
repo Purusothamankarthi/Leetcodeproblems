@@ -94,10 +94,15 @@ class Solution {
         }*/
 //        									26. Remove Duplicates from Sorted Array
 	        
-	        int arr[]= {0,0,1,1,1,2,2,3,3,4};
-	        RemoveDuplicatesfromSortedArray ans= new RemoveDuplicatesfromSortedArray();
+//	        int arr[]= {0,0,1,1,1,2,2,3,3,4};
+//	        RemoveDuplicatesfromSortedArray ans= new RemoveDuplicatesfromSortedArray();
+//	        
+//	      int k=ans.removeDuplicates(arr);
+//	        System.out.print(k);
+//	        								48. Rotate Image
+	        rotatematrix ans1 =new rotatematrix();
+	        int arr1[][]= {{1,2,3},{4,5,6},{7,8,9}};
+	        ans1.rotate(arr1);
 	        
-	      int k=ans.removeDuplicates(arr);
-	        System.out.print(k);
     }
 }
