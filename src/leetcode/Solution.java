@@ -10,7 +10,6 @@ class Solution {
 		int nums[]= {3,6,9,1};
 		maximumGap m=new maximumGap();
 //		System.out.print(m.maximumGap1(nums));
-		
 		int nums1[]= {1,2};
 		int nums2[]= {3,4};
 		MedianSortedArrays median=new MedianSortedArrays();
@@ -23,12 +22,10 @@ class Solution {
 		int num5[]= {2,4,6};
 		 ListNode list1 = new ListNode(num4[0]);
 	        ListNode temp1 = list1;
-
 	        for (int i = 1; i < num4.length; i++) {
 	            temp1.next = new ListNode(num4[i]);
 	            temp1 = temp1.next;
 	        }
-
 	        // list2
 	        ListNode list2 = new ListNode(num5[0]);
 	        ListNode temp2 = list2;
@@ -100,9 +97,13 @@ class Solution {
 //	      int k=ans.removeDuplicates(arr);
 //	        System.out.print(k);
 //	        								48. Rotate Image
-	        rotatematrix ans1 =new rotatematrix();
-	        int arr1[][]= {{1,2,3},{4,5,6},{7,8,9}};
-	        ans1.rotate(arr1);
-	        
+//	        rotatematrix ans1 =new rotatematrix();
+//	        int arr1[][]= {{1,2,3},{4,5,6},{7,8,9}};
+//	        ans1.rotate(arr1);    
+//	        								74. Search a 2D Matrix
+	        searchmatrix ans=new searchmatrix();
+	        int arr[][]={{1,3,5,7},{10,11,16,20},{23,30,34,60}};
+	        int target1= 3;
+	        System.out.print( ans.searchMatrix(arr, target1));
     }
 }
