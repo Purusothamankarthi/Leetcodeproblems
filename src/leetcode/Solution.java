@@ -101,9 +101,25 @@ class Solution {
 //	        int arr1[][]= {{1,2,3},{4,5,6},{7,8,9}};
 //	        ans1.rotate(arr1);    
 //	        								74. Search a 2D Matrix
-	        searchmatrix ans=new searchmatrix();
-	        int arr[][]={{1,3,5,7},{10,11,16,20},{23,30,34,60}};
-	        int target1= 3;
-	        System.out.print( ans.searchMatrix(arr, target1));
+//	        searchmatrix ans=new searchmatrix();
+//	        int arr[][]={{1,3,5,7},{10,11,16,20},{23,30,34,60}};
+//	        int target1= 3;
+//	        System.out.print( ans.searchMatrix(arr, target1));
+//	        								35. Search Insert Position
+//	        int arr2[]= {1,3,5,6};
+//	        int target1=5;
+//	        searchinsert ans=new searchinsert();
+//	        System.out.print(ans.searchInsert(arr2, target1));
+//	        								29. Divide Two Integers
+//	        int dividdividend=-2147483648;
+//	        int divisor=-1;
+//	        dividetwointeger ans2=new dividetwointeger();
+//	        System.out.print(ans2.divide(dividdividend, divisor));
+	        
+	        
+	        int arr3[]= {3,2,2,3};
+	        int val=3;
+	        removeelement ans4=new removeelement();
+	        System.out.print(ans4.removeElement(arr3, val));
     }
 }
