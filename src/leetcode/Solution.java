@@ -142,21 +142,21 @@ class Solution {
 //	        findduplicate ans=new findduplicate();
 //	        System.out.print(ans.findDuplicate(arr));
 	        
-//	        List<Integer> list = Arrays.asList(1,2,3,2,4,5,3,6);
+	        List<Integer> list = Arrays.asList(1,2,3,2,4,5,3,6);
+
+	        list.stream()
+	            .filter(n -> Collections.frequency(list, n) > 1)
+	            .distinct()
+	            .forEach(System.out::println);
+//	        List<Integer> list = Arrays.asList(1,2,2,3,3,3);
 //
-//	        list.stream()
-//	            .filter(n -> Collections.frequency(list, n) > 1)
-//	            .distinct()
-//	            .forEach(System.out::println);
-	        List<Integer> list = Arrays.asList(1,2,2,3,3,3);
-
-	        Map<Integer, Long> map = list.stream()
-	            .collect(Collectors.groupingBy(
-	                Function.identity(),
-	                Collectors.counting()
-	            ));
-
-	        System.out.println(map);
+//	        Map<Integer, Long> map = list.stream()
+//	            .collect(Collectors.groupingBy(
+//	                Function.identity(),
+//	                Collectors.counting()
+//	            ));
+//
+//	        System.out.println(map);
 	        
     }
 }
