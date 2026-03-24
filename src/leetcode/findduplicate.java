@@ -1,7 +1,7 @@
 package leetcode;
 import java.util.*;
 public class findduplicate {
-	class Solution {
+	
 	    public int findDuplicate(int[] nums) {
 	        //  List<Integer> list = Arrays.asList(nums);
 
@@ -12,5 +12,5 @@ public class findduplicate {
 	                     .findFirst()   // get first duplicate
 	                     .getAsInt();  
 	    }
-	}
+	
 }
