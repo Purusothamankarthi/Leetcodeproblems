@@ -148,15 +148,21 @@ class Solution {
 //	            .filter(n -> Collections.frequency(list, n) > 1)
 //	            .distinct()
 //	            .forEach(System.out::println);
-	        List<Integer> list = Arrays.asList(1,2,2,3,3,3);
-
-	        Map<Integer, Long> map = list.stream()
-	            .collect(Collectors.groupingBy(
-	                Function.identity(),
-	                Collectors.counting()
-	            ));
-
-	        System.out.println(map);
+//	        List<Integer> list = Arrays.asList(1,2,2,3,3,3);
+//
+//	        Map<Integer, Long> map = list.stream()
+//	            .collect(Collectors.groupingBy(
+//	                Function.identity(),
+//	                Collectors.counting()
+//	            ));
+//
+//	        System.out.println(map);
+    	
+    	
+//    											14. Longest Common Prefix
+    	String arr[]= {"flower","flow","flight"};
+    	longcommonperfix ans=new longcommonperfix();
+    	System.out.print(ans.longestCommonPrefix(arr));
 	        
     }
 }
